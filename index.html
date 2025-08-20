@@ -65,6 +65,28 @@
         font-size: 1.3rem;
       }
 
+      .pulsar {
+        animation: pulse 2s infinite; /* Aplica a animação "pulse" por 2 segundos, infinitamente */
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1); /* Imagem no tamanho original */
+        }
+        50% {
+          transform: scale(1.05); /* Aumenta a escala para 110% */
+        }
+        100% {
+          transform: scale(1); /* Volta ao tamanho original */
+        }
+      }
+
+      img {
+        width: 300px;
+        margin-top: 20px;
+        box-shadow: 0px 2px 10px #555;
+      }
+
       /* ===== BOTÃO DE COMPRA ===== */
       .cta {
         display: inline-block;
@@ -72,6 +94,7 @@
         color: #fff;
         padding: 15px 25px;
         font-size: 1.2rem;
+        font-weight: 550;
         border-radius: 8px;
         text-decoration: none;
         margin-top: 20px;
@@ -79,13 +102,15 @@
         box-shadow: 1px 1px 8px #555;
       }
       .cta:hover {
-        background: #d62828;
+        background: #17c3b2;
+        color: #000;
         transform: scale(1.05);
       }
 
       /* ===== RODAPÉ ===== */
       footer {
-        margin-top: 60px;
+        margin-top: 50px;
+        margin-bottom: 10px;
         font-size: 0.95rem;
         color: #555;
       }
@@ -115,6 +140,7 @@
             tecnologia. Simples, prático e direto.</b
           >
         </p>
+        <img src="images/Capa.jpg" class="pulsar" />
       </section>
 
       <!-- BENEFÍCIOS EM CARDS -->
@@ -136,6 +162,20 @@
         <div class="card">
           <h3>✅ Proteção da Família</h3>
           <p>Ensine crianças e idosos a navegar na internet com segurança.</p>
+        </div>
+        <div class="card">
+          <h3>✅ Compras Seguras</h3>
+          <p>
+            Aprenda a reconhecer sites confiáveis e evite cair em armadilhas ao
+            fazer pagamentos online.
+          </p>
+        </div>
+        <div class="card">
+          <h3>✅ Privacidade Garantida</h3>
+          <p>
+            Descubra como proteger seus dados pessoais e evitar que suas
+            informações caiam em mãos erradas.
+          </p>
         </div>
       </section>
 
